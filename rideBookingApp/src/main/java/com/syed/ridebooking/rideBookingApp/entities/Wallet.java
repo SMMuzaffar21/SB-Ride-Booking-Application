@@ -1,23 +1,21 @@
 package com.syed.ridebooking.rideBookingApp.entities;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
 
-import javax.annotation.processing.Generated;
+import java.util.List;
 
 @Entity
-@Getter
-@Setter
-public class Rider {
+public class Wallet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "user_id")
+    @OneToOne(fetch = FetchType.LAZY)
     private User user;
-    private Double rating;
 
+    private Double balance;
+
+    @OneToMany(mappedBy = "wallet")
+    private List<WalletTransaction> transactions;
 }

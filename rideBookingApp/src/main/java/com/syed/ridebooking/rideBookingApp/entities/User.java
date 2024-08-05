@@ -2,12 +2,16 @@ package com.syed.ridebooking.rideBookingApp.entities;
 
 import com.syed.ridebooking.rideBookingApp.entities.enums.Role;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Set;
 
 
 @Entity
 @Table(name = "app_user")
+@Getter
+@Setter
 public class User {
 
     @Id
