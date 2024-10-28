@@ -2,11 +2,15 @@ package com.syed.project.ridebooking.app.entities;
 
 import com.syed.project.ridebooking.app.entities.enums.Role;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Set;
 
 @Entity
 @Table(name = "app_user")
+@Getter
+@Setter
 public class User {
 
     @Id
@@ -20,6 +24,7 @@ public class User {
     private String password;
 
     // @ElementCollection annotation creates an other table,
+    // rather than adding a column.
     // without the need to manually create one,
     // typically used for String or numbers
     //in our case "ADMIN","DRIVER" etc....
