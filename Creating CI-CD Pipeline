@@ -1,0 +1,7 @@
+1. Go to Aws CodePipeline and create a new pipeline.
+2. Specify whether you want to use Code Build or Jenkins. 
+3. Specify the source of your repository.
+4. Add A Buildspec.yml file in your project parent folder,  so that the pipeline can read it and build your project accordingly.
+5. Specify which Aws service you need to deploy after the build is complete [mention the Aws beanstalk which you have earlier created].
+6. Specify the type of deployment, i.e, Add the changes to one instance at a time or all at once etc.
+7. Now whenever there is a change in our repo, it will automaticall trigger the CI/CD. 
