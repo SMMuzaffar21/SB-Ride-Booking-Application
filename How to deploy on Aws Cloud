@@ -4,3 +4,6 @@
 Auto Scaling Groups min, max number of instances, what type of application to deploy[In Our Case Java Application] etc.
 4. Add Roles such that Aws Elastic Beanstalk[Internally the EC2] has a "Role"[Permission] to connect to Your RDS specified in the Application.properties.
 5. After the Elastic Beanstalk is Running deploy your JAR file.
+
+
+NOTE: add your environment variables
