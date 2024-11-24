@@ -5,3 +5,5 @@
 5. Specify which Aws service you need to deploy after the build is complete [mention the Aws beanstalk which you have earlier created].
 6. Specify the type of deployment, i.e, Add the changes to one instance at a time or all at once etc.
 7. Now whenever there is a change in our repo, it will automaticall trigger the CI/CD. 
+
+NOTE: add your environment variables
