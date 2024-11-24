@@ -1,0 +1,6 @@
+1. Use RDS and get the DB connection link.
+2. Add it to your application.properties file based on your profile. [If you wish to have various DBs for various Environments].
+3. Use Aws Elastic Beanstalk to create EC2 instances and configure the Load Balancer, 
+Auto Scaling Groups min, max number of instances, what type of application to deploy[In Our Case Java Application] etc.
+4. Add Roles such that Aws Elastic Beanstalk[Internally the EC2] has a "Role"[Permission] to connect to Your RDS specified in the Application.properties.
+5. After the Elastic Beanstalk is Running deploy your JAR file.
